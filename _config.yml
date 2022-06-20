@@ -31,7 +31,7 @@ url: "asserts/_css/styles.css" # the base hostname & protocol for your site, e.g
 
 # Build settings
 # theme: minima
-plugins:
+# plugins:
   - jekyll-feed
 
 # Exclude from processing.
