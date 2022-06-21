@@ -9,6 +9,9 @@ h1 {
     margin-bottom: 0.11rem;
     font-weight: bold;
 }
+h2 {
+    color: #ffffff;
+}
 
 .page-header {
     padding: 3rem 4rem;
@@ -36,8 +39,4 @@ h1 {
 .main-content {
     text-align: center;
     background-color: #14213d;
-}
-
-.Hello {
-    color: #ffffff;
 }
