@@ -1,8 +1,9 @@
 ---
 ---
 
-.project_title {
-    color: blue
+.outer{
+    text-align: left;
 }
+
 
 @import "jekyll-theme-slate";
