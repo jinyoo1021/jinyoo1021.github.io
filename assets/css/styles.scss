@@ -1,11 +1,8 @@
 ---
 ---
 
-#header_wrap .inner {
-    padding: 50px 10px 30px 10px;
-    text-align: center;
-    margin-left: 100px;
+h1 {
+    color: red;
 }
 
-
-@import "{{ site.theme }}";
+@import "jekyll-theme-minimal";
