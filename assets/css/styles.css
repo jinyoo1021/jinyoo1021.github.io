@@ -8,4 +8,8 @@
     text-align: center;
 }
 
+h2 {
+    color: blue;
+}
+
 @import "jekyll-theme-slate";
