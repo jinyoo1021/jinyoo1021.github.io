@@ -3,6 +3,8 @@ title : Make a future
 description : Jin Yoo
 ---
 
+<link rel="stylesheet" href="/assets/_css/styles.css">
+
 ## Hello
 Jin Yoo (유 진 | @jinyoo1021)
 
