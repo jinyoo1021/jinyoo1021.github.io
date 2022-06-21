@@ -1,7 +1,7 @@
 ---
 title : Make a future
 description : Jin Yoo
-
+./assets/_css/styles.css 
 ---
 
 ## Hello
