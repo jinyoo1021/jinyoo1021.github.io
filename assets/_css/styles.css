@@ -33,6 +33,10 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.main-content {
+    text-align: center;
+}
+
 .Hello {
     color: #ffffff;
 }
