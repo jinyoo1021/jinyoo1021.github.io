@@ -4,4 +4,8 @@
     text-align: left;
 }
 
+.project_tagline {
+    text-align: center;
+}
+
 @import "jekyll-theme-slate";
