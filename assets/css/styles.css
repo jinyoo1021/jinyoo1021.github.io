@@ -1,8 +1,10 @@
 ---
 ---
 
-.inner {
+#header_wrap .inner {
+    padding: 50px 10px 30px 10px;
     text-align: center;
+    margin-left: 100px;
 }
 
 
