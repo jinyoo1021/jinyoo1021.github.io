@@ -1,9 +1,11 @@
 languages:
+  - item: Python
+  - item: Java
+  - item: Markdown
   # - item: JavaScript (ES6)
   # - item: TypeScript
   # - item: HTML
   # - item: CSS/Sass
-  - item: Python
   # - item: SQL
   # - item: R
 
