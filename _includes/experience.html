@@ -20,15 +20,15 @@
   <div class="section__title">Education</div>
   <div class="section__content">
     <div class="schools">
-      {% for job in site.data.education %}
+      {% for edu in site.data.education %}
       <div class="school">
         <div class="time-place">
           <div class="school_name">
-            <a href="{{job.url}}" target="_blank">{{job.company}}</a>
+            <a href="{{edu.url}}" target="_blank">{{edu.company}}</a>
           </div>
-          <div class="job__time">{{job.time}}</div>
+          <div class="edu__time">{{edu.time}}</div>
         </div>
-        <div class="job__position">{{job.position}}</div>
+        <div class="edu__position">{{edu.position}}</div>
       </div>
       {% endfor %}
     </div>
