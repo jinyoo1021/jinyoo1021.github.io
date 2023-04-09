@@ -1,18 +1,18 @@
 # Site settings
-name: Brittany Chiang
-title: Brittany Chiang | Front End Software Engineer
+name: Jin Yoo
+title: Jin Yoo
 description: Design-minded front-end software engineer focused on building beautiful interfaces and experiences
-url: https://bchiang7.github.io/
+url: https://jinyoo1021.github.io/
 baseurl: ''
-email: brittany.chiang@gmail.com
+email: jinyoo1021@gmail.com
 cover: https://bchiang7.github.io/img/og.png
 logo: https://bchiang7.github.io/img/emojis/technologist.png
 resume: https://bchiang7.github.io/resume.pdf
 social:
   - title: email
     url: mailto:brittany.chiang@gmail.com
-  - title: twitter
-    url: https://twitter.com/bchiang7
+  # - title: twitter
+    # url: https://twitter.com/bchiang7
   - title: instagram
     url: https://instagram.com/bchiang7
   - title: codepen
