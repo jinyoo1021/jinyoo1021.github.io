@@ -17,4 +17,19 @@
 
     <a href="{{site.resume}}" target="_blank" class="arrow-link">View My Resume</a>
   </div>
+  <div class="section__title">Education</div>
+  <div class="section__content">
+    <div class="schools">
+      {% for job in site.data.education %}
+      <div class="school">
+        <div class="time-place">
+          <div class="school_name">
+            <a href="{{job.url}}" target="_blank">{{job.company}}</a>
+          </div>
+          <div class="job__time">{{job.time}}</div>
+        </div>
+        <div class="job__position">{{job.position}}</div>
+      </div>
+      {% endfor %}
+    </div>
 </section>
