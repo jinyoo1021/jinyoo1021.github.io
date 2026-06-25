@@ -1,0 +1,77 @@
+# =====================================================================
+# Site content - edit this file to update the page copy.
+# =====================================================================
+
+# ---- Top intro ----
+name: Jin Yoo
+role: Computing Science - Artificial Intelligence Student
+
+# ---- Quote (shown on left panel) ----
+quote:
+  text: '"Did I get better today?"'
+  author: Kobe Bryant
+
+# ---- About ----
+about:
+  - I'm a Computing Science student at the University of Alberta, specializing in <strong>Artificial Intelligence</strong>.
+  - >-
+    My goal is to start out as a <strong>backend</strong> developer and grow into <strong>cloud</strong> and <strong>infrastructure engineering</strong>.
+    When a problem comes up, I dig into it and keep working at it patiently until it's solved.
+  - >-
+    Above all, I'm driven to learn as much as I can. <strong>Communication</strong>
+    matters just as much, and I believe that talking things through with others
+    leads to stronger answers.
+
+skills:
+  - UofA
+  - Backend Development
+  - Communication
+  - Cloud Computing
+  - Infrastructure Engineering
+  
+
+# ---- Projects ----
+projects:
+  - title: Pillly
+    description: Full-stack medication reminder app with interactive lock-screen push notifications.
+    tags: [FastAPI, Flutter, Riverpod, Supabase, QStash, FCM/APNs]
+    link: https://github.com/jinyoo1021/pillly
+    link_label: GitHub
+  - title: Ollama_RAG
+    description: Fully local Korean PDF RAG chatbot with hybrid retrieval and source citations.
+    tags: [Ollama, KURE-v1, Chroma, Hybrid Retrieval, Korean NLP, Chainlit]
+    link: https://github.com/jinyoo1021/ollama_RAG
+    link_label: GitHub
+
+# ---- Education ----
+education:
+  - period: In Progress
+    company: University of Alberta
+    title: B.Sc. in Computing Science with AI
+    points:
+      - Studying computing science with an artificial intelligence focus.
+      - Building projects across backend development, applied AI.
+
+# ---- Interested In ----
+interests:
+  - name: Backend Development
+    detail: I'm drawn to designing clean APIs, structuring services that stay stable under load, and tuning them for solid performance.
+  - name: Cloud Computing
+    detail: What interests me most is resource pooling and the elasticity to scale quickly and smoothly as demand shifts.
+  - name: Infrastructure Engineering
+    detail: Designing and building infrastructure is where I want to grow — including balancing trade-offs between cost and client needs.
+  - name: Solution Architecture
+    detail: Choosing the right technologies and designing systems that can scale over time is what pulls me here.
+
+# ---- Contact ----
+contact:
+  email: yoojin021021@gmail.com
+  links:
+    - label: Email 
+      url: mailto:yoojin021021@gmail.com
+    - label: GitHub
+      url: https://github.com/jinyoo1021
+    - label: LinkedIn
+      url: https://linkedin.com/in/jin-yoo-161527265
+    # - label: Blog
+    #   url: https://jinyoo1021.github.io/blog

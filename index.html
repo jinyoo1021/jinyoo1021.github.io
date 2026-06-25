@@ -1,0 +1,131 @@
+---
+layout: default
+---
+{% assign c = site.data.content %}
+{% assign first_name = c.name | split: " " | first %}
+
+<div class="page">
+
+  <!-- LEFT PANEL -->
+  <aside class="left-panel">
+    <div class="left-panel__inner">
+
+      <div class="left-panel__intro">
+        <h1 class="greeting"><span class="greeting__lead">Hello! I'm</span> <strong>{{ first_name }}</strong></h1>
+        <p class="role">{{ c.role }}</p>
+      </div>
+
+      <blockquote class="quote">
+        <p>{{ c.quote.text }}</p>
+        <cite>— {{ c.quote.author }}</cite>
+      </blockquote>
+
+    </div>
+
+    <!-- Pinned to bottom-left via position: absolute -->
+    <div class="social-links">
+      {% for link in c.contact.links %}
+      <a href="{{ link.url }}" class="social-link" target="_blank" rel="noopener">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+  </aside>
+
+  <!-- RIGHT PANEL -->
+  <main class="right-panel">
+
+    <!-- Background -->
+    <div class="panel-section" data-section="background">
+      <div class="panel-section__header">
+        <span class="panel-section__label">background</span>
+      </div>
+      <div class="panel-section__content">
+        <div class="section-body">
+          {% for paragraph in c.about %}
+          <p>{{ paragraph }}</p>
+          {% endfor %}
+          {% if c.skills %}
+          <div class="skill-row">
+            {% for skill in c.skills %}
+            <span class="skill-chip">{{ skill }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="panel-section" data-section="education">
+      <div class="panel-section__header">
+        <span class="panel-section__label">education</span>
+      </div>
+      <div class="panel-section__content">
+        <div class="section-body">
+          {% for job in c.education %}
+          <div class="exp-item">
+            <div class="exp-item__period">{{ job.period }}</div>
+            <div class="exp-item__body">
+              <div class="exp-item__title">{{ job.title }}</div>
+              <div class="exp-item__company">{{ job.company }}</div>
+              <ul class="exp-item__points">
+                {% for point in job.points %}
+                <li>{{ point }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="panel-section" data-section="projects">
+      <div class="panel-section__header">
+        <span class="panel-section__label">projects</span>
+      </div>
+      <div class="panel-section__content">
+        <div class="section-body section-body--grid">
+          {% for project in c.projects %}
+          <div class="proj-card">
+            <div class="proj-card__title">{{ project.title }}</div>
+            <p class="proj-card__desc">{{ project.description }}</p>
+            {% if project.tags %}
+            <div class="proj-card__tags">
+              {% for tag in project.tags %}
+              <span class="skill-chip">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+            {% if project.link %}
+            <a class="proj-card__link" href="{{ project.link }}" target="_blank" rel="noopener">{{ project.link_label | default: "View" }} →</a>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Interested In -->
+    <div class="panel-section" data-section="interested">
+      <div class="panel-section__header">
+        <span class="panel-section__label">interested in...</span>
+      </div>
+      <div class="panel-section__content">
+        <div class="section-body">
+          {% if c.interests %}
+          <div class="interest-list">
+            {% for item in c.interests %}
+            <div class="interest-item">
+              <div class="interest-item__name">{{ item.name }}</div>
+              <div class="interest-item__detail">{{ item.detail }}</div>
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>

@@ -1,0 +1,19 @@
+# Site settings
+title: Jin Yoo
+description: >-
+  Jin Yoo's personal portfolio — about, projects, and experience.
+url: "https://jinyoo1021.github.io"
+baseurl: ""
+lang: en
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .gitignore
